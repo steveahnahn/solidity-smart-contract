@@ -2,5 +2,6 @@
     "python.formatting.provider": "black",
     "files.watcherExclude": {
         "**/target": true
-    }
+    },
+    "python.terminal.activeEnvironment": true
 }

@@ -12,63 +12,69 @@ contract FundMe {
     address[] public funders;
     address public owner;
     AggregatorV3Interface public priceFeed;
-
+    
+    // if you're following along with the freecodecamp video
+    // Please see https://github.com/PatrickAlphaC/fund_me
+    // to get the starting solidity contract code, it'll be slightly different than this!
     constructor(address _priceFeed) public {
         priceFeed = AggregatorV3Interface(_priceFeed);
-        owner = msg.sender;    
+        owner = msg.sender;
     }
 
     function fund() public payable {
-        //50$
-
-        uint256 minimumUSD = 50 * 10 ** 18;
-        require(getConversionRate(msg.value)  >= minimumUSD, "You need to spend more ETH!");
-
+        uint256 mimimumUSD = 20 * 10**18;
+        require(
+            getConversionRate(msg.value) >= mimimumUSD,
+            "You need to spend more ETH!"
+        );
         addressToAmountFunded[msg.sender] += msg.value;
-
         funders.push(msg.sender);
-
-        //what is the ETH -> USD conversion rate
     }
 
     function getVersion() public view returns (uint256) {
         return priceFeed.version();
     }
 
-
-    function getPrice() public view returns(uint256) {
-
-        (,int256 answer,,,) = priceFeed.latestRoundData();
-
-        return uint256(answer * 10 ** 10);
+    function getPrice() public view returns (uint256) {
+        (, int256 answer, , , ) = priceFeed.latestRoundData();
+        return uint256(answer * 10000000000);
     }
 
-    //1 GWEI is 10000000000 WEI
-    //sent GWEI to USD
-    function getConversionRate(uint256 ethAmount) public view returns(uint256) {
+    // 1000000000
+    function getConversionRate(uint256 ethAmount)
+        public
+        view
+        returns (uint256)
+    {
         uint256 ethPrice = getPrice();
-        uint256 ethAmountInUsd = (ethPrice * ethAmount) / 10 ** 18;
+        uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1000000000000000000;
         return ethAmountInUsd;
-
     }
 
-    
-    modifier onlyOwner {
+    function getEntranceFee() public view returns (uint256) {
+        // mimimumUSD
+        uint256 mimimumUSD = 50 * 10**18;
+        uint256 price = getPrice();
+        uint256 precision = 1 * 10**18;
+        return (mimimumUSD * precision) / price;
+    }
+
+    modifier onlyOwner() {
         require(msg.sender == owner);
         _;
     }
 
-    function withdraw() payable onlyOwner public {
-        //only want the contract admin/owner
-        //require msg.sender = owner
-
+    function withdraw() public payable onlyOwner {
         msg.sender.transfer(address(this).balance);
 
-        for (uint256 funderIndex = 0; funderIndex < funders.length; funderIndex ++) {
+        for (
+            uint256 funderIndex = 0;
+            funderIndex < funders.length;
+            funderIndex++
+        ) {
             address funder = funders[funderIndex];
             addressToAmountFunded[funder] = 0;
         }
-
         funders = new address[](0);
     }
 }

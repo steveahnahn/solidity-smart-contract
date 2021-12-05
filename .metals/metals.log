@@ -16,3 +16,52 @@ INFO: Unsupported notification method: $/setTrace
 [0m2021.11.27 15:57:12 WARN  Build server is not auto-connectable.[0m
 [0m2021.11.27 15:57:12 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.11.27 18:53:25 INFO  shutting down Metals[0m
+[0m2021.11.28 14:53:02 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos' for client Visual Studio Code 1.62.3.[0m
+[0m2021.11.28 14:53:06 INFO  time: initialize in 4.42s[0m
+[0m2021.11.28 14:53:07 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.28 14:53:07 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Nov 28, 2021 3:24:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 28, 2021 3:24:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.11.28 19:11:12 INFO  shutting down Metals[0m
+[0m2021.12.02 17:54:53 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos' for client Visual Studio Code 1.62.3.[0m
+[0m2021.12.02 17:54:57 INFO  time: initialize in 3.81s[0m
+[0m2021.12.02 17:54:57 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.02 17:54:57 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Dec 02, 2021 5:55:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.12.02 17:55:46 INFO  shutting down Metals[0m
+[0m2021.12.03 13:06:16 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos' for client Visual Studio Code 1.62.3.[0m
+[0m2021.12.03 13:06:20 INFO  time: initialize in 4.07s[0m
+[0m2021.12.03 13:06:20 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.03 13:06:20 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Dec 03, 2021 2:06:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 03, 2021 2:06:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.12.03 14:17:46 INFO  shutting down Metals[0m
+[0m2021.12.03 15:41:47 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos' for client Visual Studio Code 1.62.3.[0m
+[0m2021.12.03 15:41:50 INFO  time: initialize in 2.79s[0m
+[0m2021.12.03 15:41:50 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.03 15:41:50 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.12.03 17:37:23 INFO  shutting down Metals[0m
+[0m2021.12.04 11:03:59 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos' for client Visual Studio Code 1.62.3.[0m
+[0m2021.12.04 11:04:03 INFO  time: initialize in 4.02s[0m
+[0m2021.12.04 11:04:04 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.04 11:04:04 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Dec 04, 2021 3:03:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 04, 2021 5:41:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 04, 2021 6:22:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 04, 2021 6:22:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 04, 2021 6:23:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 04, 2021 6:23:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 04, 2021 6:23:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.12.04 20:05:09 INFO  shutting down Metals[0m
