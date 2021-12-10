@@ -1,0 +1,9 @@
+[0m2021.12.06 19:10:37 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos\smartcontract-lottery' for client Visual Studio Code 1.62.3.[0m
+[0m2021.12.06 19:10:42 INFO  time: initialize in 4.18s[0m
+[0m2021.12.06 19:10:42 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.06 19:10:42 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos\smartcontract-lottery'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.12.07 00:13:19 INFO  shutting down Metals[0m
+[0m2021.12.09 19:49:52 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\SteveAhn\Documents\solidity\demos\smartcontract-lottery' for client Visual Studio Code 1.62.3.[0m
+[0m2021.12.09 19:49:56 INFO  time: initialize in 4.5s[0m
+[0m2021.12.09 19:49:58 WARN  Build server is not auto-connectable.[0m
+[0m2021.12.09 19:49:58 WARN  no build tool detected in workspace 'C:\Users\SteveAhn\Documents\solidity\demos\smartcontract-lottery'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
