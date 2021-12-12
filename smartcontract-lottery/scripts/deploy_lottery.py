@@ -2,6 +2,7 @@ from scripts.helpful_scripts import get_account, get_contract, fund_with_link
 from brownie import Lottery, network, config
 import time
 
+
 def deploy_lottery():
     account = get_account()
     lottery = Lottery.deploy(
@@ -11,10 +12,11 @@ def deploy_lottery():
         config["networks"][network.show_active()]["fee"],
         config["networks"][network.show_active()]["keyhash"],
         {"from": account},
-        publish_source=config["networks"][network.show_active()].get("verify", False)
+        publish_source=config["networks"][network.show_active()].get("verify", False),
     )
     print("Deployed Lottery!")
     return lottery
+
 
 def start_lottery():
     account = get_account()
@@ -22,6 +24,7 @@ def start_lottery():
     starting_tx = lottery.startLottery({"from": account})
     starting_tx.wait(1)
     print("Lottery has started!")
+
 
 def enter_lottery():
     account = get_account()
@@ -31,14 +34,15 @@ def enter_lottery():
     tx.wait(1)
     print("You entered the lottery!")
 
+
 def end_lottery():
     account = get_account()
     lottery = Lottery[-1]
-    #fund the contract
-    #then end the lottery
+    # fund the contract
+    # then end the lottery
     tx = fund_with_link(lottery.address)
     tx.wait(1)
-    ending_transaction = lottery.endLottery({"from":account})
+    ending_transaction = lottery.endLottery({"from": account})
     ending_transaction.wait(1)
     time.sleep(60)
     print(f"{lottery.recentWinner()} is the new winner!")
